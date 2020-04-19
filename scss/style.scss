@@ -1,0 +1,15 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'variables';
+
+table {
+  border-collapse: collapse;
+}
+
+.container {
+  @include media-breakpoint-down(sm) {
+    &.header {
+      padding: 0;
+      overflow-x: hidden;
+    }
+  }
+}

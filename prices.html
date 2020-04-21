@@ -29,7 +29,7 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="common.html">Common</a>
+                            <a class="nav-link" href="evolution.html">Evolution</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="prices.html">Prices <span class="sr-only">(current)</span></a>
@@ -39,6 +39,7 @@
                                 Cats
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="cats/index.html">All</a>
                                 <a class="dropdown-item" href="cats/norwegian.html">Norwegian Forest cat</a>
                                 <a class="dropdown-item" href="cats/himalayan.html">Himalayan cat</a>
                                 <a class="dropdown-item" href="cats/scottish.html">Scottish Fold</a>
@@ -52,36 +53,55 @@
     </header>
     <main>
         <div class="container">
-            <h1>Prices</h1>
-            <table class="table">
-                <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col" colspan="2">Price</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Norwegian Forest cat</td>
-                    <td>$600</td>
-                    <td>$3000</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Himalayan cat</td>
-                    <td>$500</td>
-                    <td>$1300</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Scottish Fold</td>
-                    <td>$200</td>
-                    <td>$1500</td>
-                </tr>
-                </tbody>
-            </table>
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Prices</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-12">
+                    <h1>Prices</h1>
+                    <table class="table" id="prices">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col" colspan="2">Weight</th>
+                            <th scope="col" colspan="2">Price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Norwegian Forest cat</td>
+                            <td>10</td>
+                            <td>20</td>
+                            <td>600</td>
+                            <td>3000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Himalayan cat</td>
+                            <td>7</td>
+                            <td>12</td>
+                            <td>500</td>
+                            <td>1300</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Scottish Fold</td>
+                            <td>9</td>
+                            <td>13</td>
+                            <td>200</td>
+                            <td>1500</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

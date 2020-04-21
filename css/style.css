@@ -9881,9 +9881,47 @@ table {
 
 @media (max-width: 767.98px) {
   .container.header {
-    padding: 0;
     overflow-x: hidden;
+    padding: 0;
   }
+}
+
+#cats {
+  font: "Arial, sans-serif";
+}
+#cats .card-text {
+  color: #888;
+}
+
+#prices th[colspan="2"] {
+  text-align: center;
+}
+#prices .price-column, #prices td:nth-child(6), #prices td:nth-child(5) {
+  width: 100px;
+}
+#prices .price-column:before, #prices td:nth-child(6):before, #prices td:nth-child(5):before {
+  content: "$";
+}
+#prices .range-column:after, #prices td:nth-child(5):after, #prices td:nth-child(3):after {
+  content: "-";
+  margin-left: 10px;
+  position: absolute;
+}
+#prices th:nth-child(1) {
+  width: calc(100px * 0.3);
+}
+#prices td:nth-child(3) {
+  text-align: right;
+  width: calc(100px * 0.6);
+}
+#prices td:nth-child(4) {
+  width: calc(100px * 0.8);
+}
+#prices td:nth-child(4):after {
+  content: " lbs";
+}
+#prices td:nth-child(5) {
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,73 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'variables';
+
+table {
+  border-collapse: collapse;
+}
+
+.container {
+  @include media-breakpoint-down(sm) {
+    &.header {
+      overflow-x: hidden;
+      padding: 0;
+    }
+  }
+}
+
+#cats {
+  font: $font;
+
+  .card-text {
+    color: $text-color;
+  }
+}
+
+#prices {
+  th[colspan="2"] {
+    text-align: center;
+  }
+
+  .price-column {
+    width: $price-column-width;
+
+    &:before {
+      content: '$';
+    }
+  }
+
+  .range-column {
+    &:after {
+      content: '-';
+      margin-left: 10px;
+      position: absolute;
+    }
+  }
+
+  th:nth-child(1) {
+    width: calc(#{$price-column-width} * 0.3);
+  }
+
+  td:nth-child(3) {
+    text-align: right;
+    @extend .range-column;
+    width: calc(#{$price-column-width} * 0.6);
+  }
+
+  td:nth-child(4) {
+    width: calc(#{$price-column-width} * 0.8);
+
+    &:after {
+      content: ' lbs';
+    }
+  }
+
+  td:nth-child(5) {
+    @extend .price-column, .range-column;
+    text-align: right;
+
+  }
+
+  td:nth-child(6) {
+    @extend .price-column;
+  }
+}

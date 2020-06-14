@@ -1,0 +1,7 @@
+{
+  "name": "Learning CS50 Python and JavaScript",
+  "version": "1.0.0",
+  "devDependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}
